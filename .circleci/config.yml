@@ -9,7 +9,7 @@ jobs:
         - checkout
         - run: git submodule update --init
         - run: bundle install
-        - run: bundle exec rake features:smoke
+        - run: bundle exec rake features
         - store_artifacts:
             path: ~/howitzer_cucumber_freelancer/log
             destination: artifact-file
