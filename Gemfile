@@ -9,8 +9,8 @@ gem 'repeater'
 gem 'rest-client'
 gem 'rspec', '~>3.2'
 gem 'rubocop'
-gem 'turnip'
 gem 'spyke'
+gem 'turnip'
 
 # Uncomment it if you are going to use 'webkit' driver. QT library should be installed.
 # See https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit

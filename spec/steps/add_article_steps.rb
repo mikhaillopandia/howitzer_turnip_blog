@@ -9,15 +9,6 @@ module AddArticleSteps
     page.on { choose_menu('New article') }
   end
 
-  step 'I fill and submit form on new article page with correct data' do
-    s = self
-    self.article = build(:article)
-    NewArticlePage.on do
-      fill_form(title: s.article.title, text: s.article.text)
-      submit_form
-    end
-  end
-
   step 'I fill and submit form on new article page with blank data' do
     NewArticlePage.on do
       fill_form
@@ -50,10 +41,6 @@ module AddArticleSteps
       expect(text).to include(s.article.title)
       expect(text).to include(s.article.text)
     end
-  end
-
-  step 'I should see following text on articles page:' do |text|
-    expect(ArticlesPage.given.text).to include(text)
   end
 end
 
