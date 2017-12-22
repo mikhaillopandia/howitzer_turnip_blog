@@ -1,7 +1,4 @@
-Feature: Log In
-  As a user
-  I want to use my credentials to login the system
-  So I can login the system
+Feature: Home
 
   @smoke
   Scenario: user can open articles page via menu

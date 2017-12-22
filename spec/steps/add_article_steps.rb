@@ -44,16 +44,16 @@ module AddArticleSteps
     end
   end
 
-  step 'I should see newly created article with correct data on article list page' do
+  step 'I should see newly created article with correct data on articles page' do
     s = self
-    ArticleListPage.on do
+    ArticlesPage.on do
       expect(text).to include(s.article.title)
       expect(text).to include(s.article.text)
     end
   end
 
-  step 'I should see following text on new article page:' do |text|
-    expect(NewArticlePage.given.text).to include(text)
+  step 'I should see following text on articles page:' do |text|
+    expect(ArticlesPage.given.text).to include(text)
   end
 end
 
