@@ -1,3 +1,5 @@
+require_relative 'blog_page'
+
 class NewArticlePage < BlogPage
   path '/articles/new'
   validate :url, %r{/articles/new/?}

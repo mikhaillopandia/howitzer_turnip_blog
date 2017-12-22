@@ -1,3 +1,5 @@
+require_relative 'blog_page'
+
 class ArticlePage < BlogPage
   path '/articles{/id}'
   validate :url, %r{\/articles\/\d+\/?\z}
